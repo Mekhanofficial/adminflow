@@ -8,7 +8,7 @@ const USERS_KEY = "users";
 const LOGGEDIN_KEY = "loggedInUser";
 const PRODUCTS_KEY = "products";
 
-// Default admin
+// admin
 function initAdmin() {
   const users = JSON.parse(localStorage.getItem(USERS_KEY)) || [];
   if (!users.find(u => u.role === "admin")) {
@@ -21,7 +21,6 @@ function initAdmin() {
     localStorage.setItem(USERS_KEY, JSON.stringify(users));
   }
   
-  // Initialize products if not exists
   const products = JSON.parse(localStorage.getItem(PRODUCTS_KEY));
   if (!products) {
     localStorage.setItem(PRODUCTS_KEY, JSON.stringify(seedProducts));
