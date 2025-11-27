@@ -222,13 +222,13 @@ export default function AdminProducts() {
                       onClick={() => startEdit(p)}
                       className="flex-1 flex items-center justify-center gap-2 px-3 py-2 bg-yellow-400 hover:bg-yellow-500 text-gray-900 rounded-lg font-semibold transition"
                     >
-                      ✏️ Edit
+                       Edit
                     </button>
                     <button
                       onClick={() => remove(p.id)}
                       className="flex-1 flex items-center justify-center gap-2 px-3 py-2 bg-red-500 hover:bg-red-600 text-white rounded-lg font-semibold transition"
                     >
-                      🗑️ Delete
+                       Delete
                     </button>
                   </div>
                 </div>
