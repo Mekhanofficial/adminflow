@@ -16,7 +16,6 @@ export default function AdminProducts() {
     setFilteredProducts(productsData);
   }, []);
 
-  // Get unique categories for filter dropdown
   const categories = ["all", ...new Set(products.map(p => p.category).filter(Boolean))];
 
   // Filter products based on search term and category
