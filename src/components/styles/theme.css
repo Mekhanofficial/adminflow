@@ -1,0 +1,15 @@
+.theme-card{
+    height: 80px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 20px;
+}
+.light{
+    background-color: rgb(255, 255, 255);
+}
+.dark{
+    background-color: black;
+}
