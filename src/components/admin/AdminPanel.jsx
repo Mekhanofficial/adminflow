@@ -12,7 +12,7 @@ export default function AdminPanel() {
       case "products": 
         return <AdminProducts />;
       case "dashboard": 
-        return <div className="text-center py-12"><h2 className="text-1xl font-bold"></h2></div>;
+        return <div className="text-center py-12"><h2 className="text-2xl font-bold"></h2></div>;
       case "orders": 
         return <div className="text-center py-12"><h2 className="text-2xl font-bold"></h2></div>;
       case "users": 
