@@ -10,28 +10,28 @@ export default function AdminSidebar({ activePage, setActivePage, onClose }) {
       }}
       className={`flex items-center gap-3 p-3 w-full rounded-xl transition text-left font-medium
       ${activePage === id 
-        ? "bg-blue-600 text-white shadow-lg scale-105" 
-        : "bg-gray-800 text-gray-200 hover:bg-gray-700"}`}
+        ? "bg-gradient-to-r from-purple-600 to-indigo-600 text-white shadow-lg scale-105" 
+        : "bg-gradient-to-r from-gray-800 to-gray-900 text-gray-200 hover:from-gray-700 hover:to-gray-800"}`}
     >
       {icon} {label}
     </button>
   );
 
   return (
-    <aside className="w-64 bg-gradient-to-b from-gray-900 to-gray-950 text-gray-200 h-screen sticky top-0 overflow-y-auto p-6 flex flex-col">
+    <aside className="w-64 bg-gradient-to-b from-indigo-900 via-purple-900 to-indigo-950 text-gray-200 h-screen sticky top-0 overflow-y-auto p-6 flex flex-col shadow-2xl">
       <div className="flex justify-between items-center mb-8 md:hidden">
         <div>
           <h1 className="text-3xl font-bold text-white">Admin Panel</h1>
-          <p className="text-gray-400 text-sm mt-1">Manage your store</p>
+          <p className="text-purple-200 text-sm mt-1">Manage your store</p>
         </div>
-        <button onClick={onClose} className="text-gray-400 hover:text-white">
+        <button onClick={onClose} className="text-purple-200 hover:text-white">
           <X size={24} />
         </button>
       </div>
 
       <div className="mb-8 hidden md:block">
         <h1 className="text-3xl font-bold text-white">Admin Panel</h1>
-        <p className="text-gray-400 text-sm mt-1">Manage your store</p>
+        <p className="text-purple-200 text-sm mt-1">Manage your store</p>
       </div>
 
       <nav className="space-y-2 flex-1">
@@ -41,8 +41,8 @@ export default function AdminSidebar({ activePage, setActivePage, onClose }) {
         <LinkItem id="users" label="Users" icon={<User size={20} />} />
       </nav>
 
-      <div className="border-t border-gray-700 pt-4">
-        <button className="flex items-center gap-3 p-3 w-full rounded-xl bg-gray-800 text-gray-200 hover:bg-gray-700 transition font-medium">
+      <div className="border-t border-purple-700 pt-4">
+        <button className="flex items-center gap-3 p-3 w-full rounded-xl bg-gradient-to-r from-gray-800 to-gray-900 text-gray-200 hover:from-gray-700 hover:to-gray-800 transition font-medium">
           <Settings size={20} /> Settings
         </button>
       </div>

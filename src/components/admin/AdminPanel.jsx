@@ -23,7 +23,7 @@ export default function AdminPanel() {
   };
 
   return (
-    <div className="flex bg-gray-50 min-h-screen">
+    <div className="flex bg-gradient-to-br from-gray-50 to-purple-50 min-h-screen">
       {showSidebar && (
         <div className="fixed inset-0 z-40 md:hidden">
           <div className="fixed inset-0 bg-black bg-opacity-50" onClick={() => setShowSidebar(false)}></div>
