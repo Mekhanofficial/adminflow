@@ -18,7 +18,7 @@ export default function AdminSidebar({ activePage, setActivePage, onClose }) {
   );
 
   return (
-    <aside className="w-64 bg-gradient-to-b from-indigo-900 via-purple-900 to-indigo-950 text-gray-200 h-screen sticky top-0 overflow-y-auto p-6 flex flex-col shadow-2xl">
+    <aside className="w-64 bg-gradient-to-b from-indigo-900 via-purple-800 to-indigo-950 text-gray-200 h-screen sticky top-0 overflow-y-auto p-6 flex flex-col shadow-2xl">
       <div className="flex justify-between items-center mb-8 md:hidden">
         <div>
           <h1 className="text-3xl font-bold text-white">Admin Panel</h1>
